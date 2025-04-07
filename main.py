@@ -35,13 +35,15 @@ S2 = 5
 
 start_time = time.time()
 
+#    load_image('./images/aug/204-1.jpg', 512, device),
+
 ref_images = torch.cat([
-    load_image('./images/aug/203.jpg', 512, device),
-    load_image('./images/aug/203-1.jpg', 512, device),
-    load_image('./images/aug/203-2.jpg', 512, device),
-    load_image('./images/aug/203-3.jpg', 512, device)
+    #load_image('./images/seismic/refs/1.jpg', 512, device),
+    #load_image('./images/seismic/refs/2.jpg', 512, device),
+    #load_image('./images/seismic/refs/3.jpg', 512, device),
+    load_image('./images/seismic/refs/4.jpg', 512, device)
 ])
-target_image = load_image('./images/tgts/203-1.jpg', 512, device)
+target_image = load_image('./images/seismic/target/m2.jpg', 512, device)
 
 out_dir = "./workdir/exp/"
 # ================================== config end ========================================
