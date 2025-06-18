@@ -1,1 +1,4 @@
-masactrl/__pycache__
+masactrl/__pycache__/
+__pycache__/
+*.py[cod]
+*$py.class

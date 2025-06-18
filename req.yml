@@ -17,5 +17,7 @@ dependencies:
     - torchmetrics==0.7.3
     - huggingface-hub==0.25.2
     - torchvision==0.15.1
+    - huggingface-hub==0.13.4
+    
 
 pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 -f https://download.pytorch.org/whl/torch_stable.html --trusted-host  download.pytorch.org

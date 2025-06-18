@@ -14,7 +14,7 @@ from masactrl.masactrl_inversion import MutualSelfAttentionControlInversion
 from masactrl.masactrl_utils import AttentionBase
 from masactrl.masactrl_utils import regiter_attention_editor_diffusers
 
-torch.cuda.set_device(0)  # set the GPU device
+#torch.cuda.set_device(0)  # set the GPU device
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 print("Device:" + str(device))
 
@@ -52,7 +52,7 @@ print(f"# 0. prepare - Time elapsed: {time.time() - start_time:.2f} seconds")
 start_time = time.time()
 
 model_path = "CompVis/stable-diffusion-v1-4"
-model_path = "/nethome/atena_projetos/cym7/models/stable-diffusion-v1-4"
+#model_path = "/nethome/atena_projetos/cym7/models/stable-diffusion-v1-4"
 
 scheduler = DDIMScheduler(beta_start=0.00085, beta_end=0.012, beta_schedule="scaled_linear",
                           clip_sample=False,
